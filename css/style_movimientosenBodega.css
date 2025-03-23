@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container-fluid {
+    width: 98%;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.back-btn {
+    background-color: #a1a1a1;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.back-btn ion-icon {
+    margin-right: 10px;
+}
+
+.back-btn:hover {
+    background-color: #6b39c5;
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    align-items: right;
+    display: flex;
+}
+
+.header .create-return {
+    background-color: #7d47e6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.date-range {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.date-range input[type="date"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.create-btn {
+    background-color: #7b47f1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.create-btn ion-icon {
+    margin-right: 10px;
+}
+
+.table-container {
+    width: 98%; 
+    overflow-x: auto; 
+    margin-top: 20px;
+    display: block; 
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #c7c7c7;
+}
+
+th {
+    background-color: #bebebe;
+}
+
+
+thead th {
+    background-color: #bebebe; 
+    padding: 10px;
+    text-align: center; 
+}
+
+tbody td {
+    padding: 10px;
+    border-top: 1px solid #acacac;
+    text-align: center; 
+}
+
+thead th, tbody td {
+    width: auto; 
+    justify-content: center; 
+}
+
+button.process-return {
+    background-color: #7d47e6;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+button.process-return ion-icon {
+    margin-right: 10px;
+    font-size: 16px;
+    align-items: center;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #acacac;
+    background-color: white;
+}

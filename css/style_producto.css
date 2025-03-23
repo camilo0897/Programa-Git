@@ -1,0 +1,264 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container-fluid {
+    width: 98%;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    align-items: right;
+    display: flex;
+}
+
+.header .create-return {
+    background-color: #7d47e6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-btn {
+    background-color: #7b47f1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.create-btn ion-icon {
+    margin-right: 10px;
+}
+
+.create-btn:hover {
+    background-color: #6b39c5;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn {
+    background-color: #a1a1a1;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.back-btn ion-icon {
+    margin-right: 10px;
+}
+
+.back-btn:hover {
+    background-color: #6b39c5;
+    transition: background-color 0.3s ease;
+}
+
+.table-container {
+    width: 98%; 
+    overflow-x: auto; 
+    margin-top: 20px;
+    display: block; 
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 10px;
+}
+
+thead th {
+    background-color: #bebebe; 
+    padding: 10px;
+    text-align: center; 
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #c7c7c7;
+}
+
+th {
+    background-color: #bebebe;
+}
+
+
+tbody td {
+    padding: 10px;
+    border-top: 1px solid #acacac;
+    text-align: center; 
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #acacac;
+    background-color: white;
+}
+
+.foto {
+    width: 50px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    table {
+        display: block;
+    }
+    
+    thead th, tbody td {
+        display: block;
+        width: 100%;
+    }
+    
+    th, td {
+        border: none;
+        border-bottom: 1px solid #f2f2f2;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    
+    td {
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    select {
+        display: block;
+    }
+    
+    table {
+        font-size: 12px;
+    }
+    
+    th, td {
+        padding: 10px;
+    }
+    
+    th {
+        background-color: #f0f0f0;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f0f0f0;
+    }
+    
+    td {
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .back-btn {
+        display: none;
+    }
+    
+    table {
+        font-size: 10px;
+    }
+    
+    th, td {
+        padding: 5px;
+    }
+    
+    th {
+        background-color: #f0f0f0;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f0f0f0;
+    }
+    
+    td {
+        margin: 0;
+        padding: 5px;
+    }
+    
+    select {
+        display: block;
+    }
+    
+    th, td {
+        border: none;
+        border-bottom: 1px solid #f2f2f2;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+}
+
+@media (max-width: 320px) {
+    table {
+        font-size: 8px;
+    }
+    
+    th, td {
+        padding: 3px;
+    }
+    
+    th {
+        background-color: #f0f0f0;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f0f0f0;
+    }
+    
+    td {
+        margin: 0;
+        padding: 3px;
+    }
+    
+    select {
+        display: block;
+    }
+    
+    th, td {
+        border: none;
+        border-bottom: 1px solid #f2f2f2;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    
+    input[type="date"] {
+        width: 100%;
+    }
+}

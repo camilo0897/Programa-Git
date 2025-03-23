@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-right: 1px solid #dcdcdc;
+}
+
+.back-btn {
+    background-color: #a1a1a1;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-btn ion-icon {
+    margin-right: 10px;
+}
+
+.back-btn:hover {
+    background-color: #6b39c5;
+    transition: background-color 0.3s ease;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    font-size: 1rem;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.menu li ion-icon {
+    margin-right: 10px;
+}
+
+.menu li.active, .menu li:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+.save-btn {
+    background-color: #7b47f1;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.save-btn:hover {
+    background-color: #6b39c5;
+    transition: background-color 0.3s ease;
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    font-size: 1rem;
+}
+
+.form-save-btn {
+    background-color: #7b47f1;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-start;
+}
+
+.form-save-btn:hover {
+    background-color: #6b39c5;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+    
+    h2 {
+        margin-bottom: 10px;
+    }
+    
+    .sidebar {
+        width: 100%;
+        border-right: none;
+    }
+    
+    .back-btn {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 1.4rem;
+    }
+    
+    .save-btn {
+        margin-top: 10px;
+    }
+    
+    form {
+        max-width: none;
+    }
+    
+    input {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+

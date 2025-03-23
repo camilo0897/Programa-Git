@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    width: 90%;
+    margin: 0;
+    padding: 20px;
+}
+
+.back-btn {
+    background-color: #a1a1a1;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.back-btn ion-icon {
+    margin-right: 10px;
+}
+
+.back-btn:hover {
+    background-color: #6b39c5;
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.form {
+    width: 50%;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form select {
+    cursor: pointer;
+}
+
+.add-product {
+    background-color: #7d47e6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.add-product ion-icon {
+    margin-right: 10px;
+}
+
+
+.image {
+    display: flex;
+    width: 45%;
+    margin-top: 20px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+    }
+
+    .form, .image {
+        width: 100%;
+    }
+}

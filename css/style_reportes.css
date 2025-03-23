@@ -1,0 +1,168 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    width: 98%;
+    margin: auto;
+    padding: 20px;
+}
+
+.back-btn {
+    background-color: #a1a1a1;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.back-btn ion-icon {
+    margin-right: 10px;
+}
+
+.back-btn:hover {
+    background-color: #6b39c5;
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.date-range {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.date-range input[type="date"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.generate-report {
+    background-color: #7d47e6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.report-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+.card img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: #7d47e6;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #6b39c5;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .report-cards {
+        flex-direction: column;
+    }
+    
+.card {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .date-range input[type="date"] {
+        width: 150px;
+    }
+    
+    .generate-report {
+        padding: 5px 10px;
+    }
+    
+    .card {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    
+    p {
+        font-size: 0.8rem;
+    }
+    
+    .date-range input[type="date"] {
+        width: 100px;
+    }
+    
+    .generate-report {
+        padding: 3px 5px;
+    }
+    
+.card {
+    width: 100%;
+        padding: 3px;
+}
+}

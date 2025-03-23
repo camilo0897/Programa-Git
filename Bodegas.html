@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodega</title>
+    <link rel="stylesheet" href="css/styles_bodegas.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <a href="./index.html" class="back-btn">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+        </a>
+        <div class="header">
+            <h1>Bodega</h1>
+            <button class="create-btn">
+                <ion-icon name="add-circle-outline"></ion-icon>
+                Crear Bodega
+            </button>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID de bodega</th>
+                        <th>Dirección</th>
+                        <th>Capacidad</th>
+                        <th>Entrada</th>
+                        <th>Acción</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bodega123</td>
+                        <td>Bodega norte</td>
+                        <td>10,000</td>
+                        <td>Sí</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="edit-btn">Acción</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Editar</a>
+                                    <a href="#">Eliminar</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status active">Activo</span></td>
+                    </tr>
+                    <tr>
+                        <td>Bodega456</td>
+                        <td>Bodega sur</td>
+                        <td>10,000</td>
+                        <td>No</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="edit-btn">Acción</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Editar</a>
+                                    <a href="#">Eliminar</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status inactive">Inactivo</span></td>
+                    </tr>
+                    <tr>
+                        <td>Bodega456</td>
+                        <td>Bodega este</td>
+                        <td>10,000</td>
+                        <td>Si</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="edit-btn">Acción</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Editar</a>
+                                    <a href="#">Eliminar</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status active">Activo</span></td>
+                    </tr>
+                    <tr>
+                        <td>Bodega456</td>
+                        <td>Bodega oeste</td>
+                        <td>10,000</td>
+                        <td>No</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="edit-btn">Acción</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Editar</a>
+                                    <a href="#">Eliminar</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status inactive">Inactivo</span></td>
+                    </tr>
+                    <tr>
+                        <td>Bodega456</td>
+                        <td>Bodega central</td>
+                        <td>10,000</td>
+                        <td>Si</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="edit-btn">Acción</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Editar</a>
+                                    <a href="#">Eliminar</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="status active">Activo</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
